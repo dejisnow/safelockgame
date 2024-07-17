@@ -1,1 +1,41 @@
+body {
+    
+}
 
+.lockDiv{
+    display:flex;
+    flex-direction:column;
+}
+.top{
+    border-left:10px #bbcf20 solid;
+    border-top:10px #aff2ff solid;
+    border-right:10px #bbcf20 solid;
+    width:100px;
+    height:50px;
+}
+.bottom{
+width:120px;
+background-color:#aff2ff;
+height:150px;
+
+}
+.gameDiv{
+    display:flex;
+    gap:10px;
+    width:100%;
+}
+.num{
+margin-left:20px;
+    width:200px;
+    height:178px;
+    background-color:#fffbe0;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr ;
+    text-align:center ;
+}
+
+.num span{
+    padding:10px;
+    border:2px solid #dddb0c;
+  }
