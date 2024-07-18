@@ -6,12 +6,16 @@ body {
     display:flex;
     flex-direction:column;
 }
-.top{
+.topLock{
     border-left:10px #bbcf20 solid;
     border-top:10px #aff2ff solid;
     border-right:10px #bbcf20 solid;
     width:100px;
     height:50px;
+    position:relative ;
+}
+.topLock.active{
+    animation:animate 2s ease ;
 }
 .bottom{
 width:120px;
@@ -38,4 +42,32 @@ margin-left:20px;
 .num span{
     padding:10px;
     border:2px solid #dddb0c;
-  }
+}
+.btnDiv{
+    display:flex;
+    justify-content:center ;
+    align-items:center;
+}
+.btnDiv button{
+    padding:10px;
+    margin:15px;
+    background-color:#ebeeff;
+    box-shadow:1px 2px 3px grey;
+}
+
+@keyframes animate {
+    
+   0%{
+       top:0%;
+   }
+   100%{
+       top:-5%;
+       
+   }
+   
+    
+    
+}
+
+
+
